@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanessa Mesquita | Consultoria Imobiliária</title>
+    <link rel="icon" type="image/jpeg" href="img/8325874-edificio-logo-icone-design-modelo-gratis-vetor-removebg-preview.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            scroll-behavior: smooth;
+            background-color: #f1f5f9; 
+        }
+
+        .bg-luxury-grid {
+            background-image: 
+                linear-gradient(to right, rgba(30, 41, 59, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(30, 41, 59, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .glow-1 {
+            position: absolute;
+            top: -10%;
+            left: -10%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, rgba(241, 245, 249, 0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(80px);
+            animation: float 20s infinite alternate;
+        }
+
+        .glow-2 {
+            position: absolute;
+            top: 30%;
+            right: -15%;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(15, 23, 42, 0.08) 0%, rgba(241, 245, 249, 0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(80px);
+            animation: float 25s infinite alternate-reverse;
+        }
+
+        .glow-3 {
+            position: absolute;
+            bottom: 10%;
+            left: 20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, rgba(241, 245, 249, 0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(100px);
+        }
+
+        @keyframes float {
+            from { transform: translate(0, 0); }
+            to { transform: translate(50px, 50px); }
+        }
+
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.8); 
+            backdrop-filter: blur(20px); 
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.05);
+        }
+
+        .profile-image-container {
+            position: relative;
+            z-index: 10;
+        }
+
+        .profile-image-container::before {
+            content: "";
+            position: absolute;
+            inset: -20px;
+            background: linear-gradient(45deg, rgba(37, 99, 235, 0.2), transparent);
+            border-radius: 60px;
+            z-index: -2;
+            filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-luxury-grid text-slate-900 relative overflow-x-hidden min-h-screen">
+
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+    <div class="glow-3"></div>
+
+    <!-- HEADER -->
+    <header class="py-6 px-4 max-w-7xl mx-auto flex justify-between items-center sticky top-0 z-50 backdrop-blur-xl bg-white/40 border-b border-slate-200/50">
+        <div class="flex items-center gap-3">
+            <div class="relative w-12 h-12 overflow-hidden rounded-full border-2 border-blue-600 shadow-lg shadow-blue-600/20">
+                <!-- [TROQUE AQUI A IMAGEM DA LOGO/PERFIL NO TOPO] -->
+                <img src="img/WhatsApp Image 2026-02-02 at .jpeg" 
+                     alt="Vanessa Mesquita" 
+                     class="w-full h-full object-cover">
+            </div>
+            <span class="font-extrabold text-xl tracking-tight uppercase">VANESSA<span class="text-blue-600">  MESQUITA</span></span>
+        </div>
+        
+        <div class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest text-slate-600">
+            <a href="#diferenciais" class="hover:text-blue-600 transition">Diferenciais</a>
+            <a href="#contato" class="hover:text-blue-600 transition">Contato</a>
+        </div>
+        <div class="text-xs font-bold text-slate-500 bg-white/50 border border-slate-200 px-4 py-2 rounded-full shadow-sm">CRECI 294342-F</div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[90vh] flex items-center pt-12 pb-24">
+        <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            
+            <div class="relative z-10">
+                <div class="flex items-center gap-3 mb-8">
+                    <span class="h-[2px] w-12 bg-blue-600"></span>
+                    <span class="text-blue-700 text-xs font-black uppercase tracking-[0.4em]">Consultoria de Elite</span>
+                </div>
+                <h1 class="text-6xl md:text-8xl font-extrabold text-slate-950 mb-8 leading-[0.95] tracking-tight">
+                    Seu estilo <br>de vida, em <span class="text-blue-600">cada m².</span>
+                </h1>
+                <p class="text-xl text-slate-600 mb-12 leading-relaxed max-w-md font-medium">
+                    Consultoria estratégica para quem busca segurança e exclusividade na compra do seu imóvel.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contato" class="bg-blue-600 hover:bg-slate-950 text-white px-10 py-5 rounded-[24px] font-bold transition-all flex items-center justify-center gap-3 shadow-2xl shadow-blue-600/30 hover:-translate-y-1">
+                        Solicitar Consultoria
+                        <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex justify-center lg:justify-end">
+                <div class="profile-image-container w-full max-w-md">
+                    <div class="relative rounded-[60px] overflow-hidden aspect-[4/5] shadow-[0_60px_100px_-20px_rgba(15,23,42,0.3)] border-[8px] border-white/50">
+                        
+                        <!-- [TROQUE AQUI A FOTO PRINCIPAL DO BANNER] -->
+                        <img src="img/WhatsApp Image 2026-02-02 at 23.49.54.jpeg"
+                             alt="Vanessa Mesquita Consultora" 
+                             class="w-full h-full object-cover">
+                        
+                        <div class="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-white shadow-xl flex items-center gap-2">
+                            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-slate-800">Ativa Agora</span>
+                        </div>
+
+                        <div class="absolute bottom-8 left-8 right-8 glass-card p-6 rounded-[32px] border border-white/80 shadow-2xl">
+                            <p class="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">Expertise</p>
+                            <p class="text-lg font-bold text-slate-950">Consultoria de Alto Padrão</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section id="diferenciais" class="py-32 px-6 max-w-7xl mx-auto relative">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-10">
+            <div class="max-w-xl">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-slate-950 leading-tight tracking-tighter">A inteligência por trás do <span class="text-blue-600">seu próximo lar.</span></h2>
+            </div>
+            <div class="bg-white/40 p-6 rounded-3xl border border-white/60 max-w-xs">
+                <p class="text-slate-600 font-bold text-sm leading-relaxed uppercase tracking-wider">
+                    Foco absoluto em segurança jurídica e valorização patrimonial.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="glass-card p-12 rounded-[56px] hover:bg-blue-600 transition-all duration-500 group cursor-default">
+                <div class="w-16 h-16 bg-blue-100 rounded-3xl flex items-center justify-center mb-10 group-hover:bg-white/20 transition-colors">
+                    <i data-lucide="shield-check" class="text-blue-600 group-hover:text-white w-8 h-8"></i>
+                </div>
+                <h4 class="text-2xl font-black mb-4 group-hover:text-white transition-colors">Segurança Patrimonial</h4>
+                <p class="text-slate-600 font-medium leading-relaxed group-hover:text-blue-50 transition-colors">Análise técnica e jurídica de toda a documentação para uma transação sem riscos.</p>
+            </div>
+
+            <div class="glass-card p-12 rounded-[56px] hover:bg-slate-950 transition-all duration-500 group cursor-default">
+                <div class="w-16 h-16 bg-slate-200 rounded-3xl flex items-center justify-center mb-10 group-hover:bg-white/20 transition-colors">
+                    <i data-lucide="camera" class="text-slate-900 group-hover:text-white w-8 h-8"></i>
+                </div>
+                <h4 class="text-2xl font-black mb-4 group-hover:text-white transition-colors">Apresentação de Elite</h4>
+                <p class="text-slate-600 font-medium leading-relaxed group-hover:text-slate-300 transition-colors">Fotos profissionais e tours virtuais que valorizam cada detalhe do seu imóvel.</p>
+            </div>
+
+            <div class="glass-card p-12 rounded-[56px] hover:bg-blue-600 transition-all duration-500 group cursor-default">
+                <div class="w-16 h-16 bg-blue-100 rounded-3xl flex items-center justify-center mb-10 group-hover:bg-white/20 transition-colors">
+                    <i data-lucide="search" class="text-blue-600 group-hover:text-white w-8 h-8"></i>
+                </div>
+                <h4 class="text-2xl font-black mb-4 group-hover:text-white transition-colors">Busca Personalizada</h4>
+                <p class="text-slate-600 font-medium leading-relaxed group-hover:text-blue-50 transition-colors">Não apenas mostramos o que temos, buscamos o imóvel ideal baseado no seu perfil.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTATO -->
+    <section id="contato" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="bg-slate-950 rounded-[70px] p-12 md:p-24 relative overflow-hidden shadow-[0_80px_120px_-30px_rgba(15,23,42,0.6)]">
+            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600 opacity-30 blur-[150px] -mr-48 -mt-48"></div>
+            
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h3 class="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tighter leading-tight">Vamos desenhar <br>sua próxima <span class="text-blue-500 italic">fase?</span></h3>
+                    <p class="text-slate-400 text-xl mb-12 font-medium">Deixe seu contacto e receba uma proposta personalizada para seu perfil.</p>
+                    
+                    <div class="flex items-center gap-6">
+                        <div class="w-16 h-16 rounded-3xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-600/40">
+                            <i data-lucide="briefcase" class="text-white w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <p class="text-slate-500 text-xs font-black uppercase tracking-widest mb-1">Atendimento</p>
+                            <p class="text-white text-2xl font-bold italic">Consultoria Estratégica</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="space-y-6">
+                    <div class="space-y-4">
+                        <input type="text" placeholder="Seu Nome" class="w-full p-6 bg-white/5 border border-white/10 rounded-[24px] text-white placeholder:text-slate-600 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-all font-bold">
+                        <input type="tel" placeholder="Seu WhatsApp" class="w-full p-6 bg-white/5 border border-white/10 rounded-[24px] text-white placeholder:text-slate-600 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-all font-bold">
+                    </div>
+                    <button class="w-full bg-white text-slate-950 font-black py-6 rounded-[24px] hover:bg-blue-600 hover:text-white transition-all uppercase tracking-[0.2em] text-sm shadow-xl">
+                        Garantir Atendimento Exclusivo
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center gap-8">
+            <div class="h-px w-24 bg-slate-300"></div>
+            <div class="text-slate-950 font-black text-lg tracking-tighter uppercase">VANESSA<span class="text-blue-600">MESQUITA</span></div>
+            <div class="text-slate-400 text-[10px] font-black uppercase tracking-[0.4em]">
+                © 2024 • Vanessa Mesquita • Consultoria de Patrimônio
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante com Ícone do WhatsApp -->
+    <a href="https://wa.me/5511959962509" target="_blank" class="fixed bottom-10 right-10 z-[100] group">
+        <div class="relative">
+            <div class="absolute inset-0 bg-[#25D366] blur-2xl opacity-40 group-hover:opacity-100 transition duration-700 animate-pulse"></div>
+            <div class="relative bg-[#25D366] text-white p-6 rounded-[30px] shadow-2xl flex items-center justify-center transform group-hover:-translate-y-3 group-hover:rotate-6 transition duration-500">
+                <i data-lucide="message-circle" class="w-8 h-8"></i>
+            </div>
+        </div>
+    </a>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
