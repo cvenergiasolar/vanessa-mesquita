@@ -226,12 +226,11 @@
                         <input type="text" placeholder="Seu Nome" class="w-full p-6 bg-white/5 border border-white/10 rounded-[24px] text-white placeholder:text-slate-600 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-all font-bold">
                         <input type="tel" placeholder="Seu WhatsApp" class="w-full p-6 bg-white/5 border border-white/10 rounded-[24px] text-white placeholder:text-slate-600 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-all font-bold">
                     </div>
-                    <a href="https://wa.me/5511959962509?text=Olá Vanessa, gostaria de uma consultoria exclusiva." 
-                       target="_blank" 
-                       class="bg-blue-600 hover:bg-slate-950 text-white px-10 py-5 rounded-[24px] font-bold transition-all flex items-center justify-center gap-3 shadow-2xl shadow-blue-600/30 hover:-translate-y-1">
-                        Solicitar Consultoria
-                        <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-                    </a>
+                   <button onclick="enviarWhatsApp()" 
+        class="bg-blue-600 hover:bg-slate-950 text-white px-10 py-5 rounded-[24px] font-bold transition-all flex items-center justify-center gap-3 shadow-2xl shadow-blue-600/30 hover:-translate-y-1">
+    Solicitar Consultoria
+    <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+</button>
 
     <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
 </a>>
@@ -263,6 +262,12 @@
     </a>
 
     <script>
+        function enviarWhatsApp() {
+    const numero = "5511959962509";
+    const mensagem = "Olá Vanessa, gostaria de uma consultoria exclusiva.";
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+}
         lucide.createIcons();
     </script>
 </body>
